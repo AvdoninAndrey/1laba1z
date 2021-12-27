@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Таблицы истинности</title>
+  </head>
+  <body id="content">
+    <button class="btn-back">Назад</button>
+    <p class="tableOne">Таблица истинности для формулы: (x≡¬y)∨(y↓x)</p>
+    <p class="tableTwo">Таблица истинности для формулы: ((x→¬y)↑¬z)⊕¬(x∧y)</p>
+    <form id="form" class="form" action="/" method="post">
+      <h3><span>Построение таблицы истинности для логических формул</span></h3>
+      <div class="formuls">
+        <div class="first">
+          <label for="name">Формула 1:</label>
+          <label for="name">(x≡¬y)∨(y↓x)</label>
+        </div>
+        <div class="second">
+          <label for="name">Формула 2:</label>
+          <label for="name">((x→¬y)↑¬z)⊕¬(x∧y)</label>
+        </div>
+      </div>
+      <div class="butns">
+        <button class="btn" id="1-btn" type="submit">
+          Построить для первой
+        </button>
+        <button class="btn" id="2-btn" type="submit">
+          Построить для второй
+        </button>
+      </div>
+    </form>
+    <script src="table.js"></script>
+  </body>
+</html>
